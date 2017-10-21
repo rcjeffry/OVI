@@ -1,0 +1,48 @@
+ul {
+    float: left;
+    margin-left: 2cm;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #F4AF00;
+    font-weight: bold;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    font-weight: bold;
+}
+
+
+h4{
+  
+color: #125893;
+/*color: #0070a8;*/
+font-size: 40px;
+text-align: center;
+font-weight: bold;
+}
+
+p{
+
+margin-right: 3cm;
+padding-left: 7cm;
+text-align: justify;
+}
+
