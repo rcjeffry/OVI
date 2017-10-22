@@ -1,15 +1,17 @@
 ul {
     float: left;
-    margin-left: 2cm;
+    /*margin-left: 50px;*/
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #F4AF00;
+    background-color: #F0B429;
     font-weight: bold;
+    box-shadow: 10px 10px 5px #F47920;
 }
 
 li a {
+    
     display: block;
     color: #000;
     padding: 8px 16px;
@@ -32,11 +34,14 @@ li a:hover:not(.active) {
 
 h4{
   
-color: #125893;
+color: #FFFFFF;
 /*color: #0070a8;*/
 font-size: 40px;
-text-align: center;
+/*text-align: center;*/
 font-weight: bold;
+font-family: 'Libre Franklin', sans-serif;
+margin-right: 50px;
+margin-left: 50px;
 }
 
 p{
@@ -46,3 +51,23 @@ padding-left: 7cm;
 text-align: justify;
 }
 
+#texto1
+{
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    background-color: #B3B3B3;
+    padding: 60px;
+    margin-left: 100px;
+    margin-top: 1px;
+
+}
+
+body{
+
+    background: #005883 ;
+    }
+
+header{
+
+
+}
