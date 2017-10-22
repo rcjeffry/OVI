@@ -1,0 +1,116 @@
+/* Body */
+body {
+    background: #005883;
+}
+
+/* Header */
+section.container-fluid{
+    margin: 10px 0px;
+}
+
+.title{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0px 30px;
+}
+
+.title-container{
+    display: flex;
+    align-items: center;
+}
+
+/* Nav */
+.nav-container{
+    margin: 0px;
+    padding: 0px;
+    z-index: 2;
+}
+.nav-container nav {
+    background-color: #F0B429;
+    font-weight: bold;
+    box-shadow: 10px 10px 5px #F47920;
+}
+
+.nav-item a {
+    color: #000;
+}
+
+.nav-item a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.nav-item a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* Contenido de la Pagina */
+.container-body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #B3B3B3;
+    padding: 30px 50px;
+    z-index: 1;
+    text-align: justify;
+}
+
+.body-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+}
+
+.card-title{ text-align: left; margin-bottom: 0px; }
+.card-text:last-child{ font-size: 14px; }
+.img-thumbnail { height: 250px; }
+
+.twitter_feed {
+    text-align: center;
+}
+
+/* footer */
+footer{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.visitantes{
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+
+
+@media all and (max-width: 1000px){
+    .title{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .title-container{
+        max-width: 100% !important;
+        flex: 0 0 100%;
+    }
+
+    .logo-container{
+        display: none;
+    }
+}
+
+@media all and (max-width: 760px){
+    .nav-container, .container-body{
+        max-width: 100% !important;
+        flex: 0 0 100%;   
+    }   
+
+    .nav-container nav {
+        box-shadow: 0px 0px 0px;
+    }
+}
