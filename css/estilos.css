@@ -65,6 +65,8 @@ section.container-fluid{
     text-transform: uppercase;
 }
 
+.card-deck{ justify-content: space-around; }
+.card-deck .card{ flex: none; max-width: 300px; margin-bottom: 15px; }
 .card-title{ text-align: left; margin-bottom: 0px; }
 .card-text:last-child{ font-size: 14px; }
 .img-thumbnail { height: 250px; }
