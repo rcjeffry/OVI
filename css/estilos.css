@@ -71,8 +71,18 @@ section.container-fluid{
 .card-text:last-child{ font-size: 14px; }
 .img-thumbnail { height: 250px; }
 
+.video_container{
+    text-align: center;
+    margin: auto;
+    width: 560px;
+}
+
 .twitter_feed {
     text-align: center;
+}
+
+.card-footer{
+    text-align: left;
 }
 
 /* footer */
