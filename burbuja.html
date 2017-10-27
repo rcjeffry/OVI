@@ -61,23 +61,66 @@
 
 
                     <h3 class="body-title">M&eacute;todo de ordenaci&oacute;n de Burbuja</h3>
-                    <!-- Large modal -->
-                    <div class="card video_container">
-                        <!-- width="560" height="315" -->
-                        <iframe class="card-img-top" height="315" src="https://www.youtube.com/embed/NVuQWFYlXm8?showinfo=0" frameborder="0" allowfullscreen></iframe>
-                        <div class="card-footer">
-                            Ordenamiento de Burbuja (Bubble Sort) en Java<br>
-                            <small class="text-muted">
-                                <a href="https://www.youtube.com/channel/UCLXRGxAzeaLDGaOphqapzmg" target="_blank">codigofacilito</a>
-                            </small><br>
-                            <small class="text-muted">Mar 24, 2012</small><br>
+
+                    <div class="row">
+                        <div class="col-10 content-section">
+
+                            <p>Este método es uno de los más sencillos ya que su algoritmo se considera elemental, también es conocido como método de intercambio directo ya que va comparando un elemento con el siguiente y al encontrarse uno mayor lo intercambia según necesite el ordenamiento ascendente o descendente, se realizar por pares es decir el 1 con el 2, el 3 con el 4 y así sucesivamente ,la utilización de dicho método implica la realización de varios recorridos completos para ir desplazando los valores hasta tenerlos en su posición correcta, por tal motivo este método no es el más efectivo por la cantidad de comparaciones a realizar.</p><br>
+                    
+                            <p>A continuación, se muestra el algoritmo para su debida implementación.</p>
+                            
+                            <br>
+
+                            <div class="code_container">
+                                <pre><code>Para j = 1 hasta n-1 hacer<br>&#9;Si v[j] > v[j+1] entonces<br>&#9;&#9;aux = v[j]<br>&#9;&#9;v[j] = v[j+1]<br>&#9;&#9;v[j+1] = aux<br>&#9;Fin Si<br>Fin Para</code></pre>
+                            </div>
+
+                            <footer class="blockquote-footer">
+                                <cite title="Source Title">
+                                    <a href="http://sistemaseinformatica.weebly.com/uploads/1/1/5/0/11503229/modulo.2011.pdf" target="_blank">Bermúdez Rojas, S. (2011) - Introducción A La Programación</a>
+                                </cite>
+                            </footer>
+                            <footer class="blockquote-footer">
+                                <cite title="Source Title">
+                                    <a href="http://hdl.handle.net/10596/11970" target="_blank">Chaves Torres, A. (2017) - Aprenda a diseñar algoritmos</a>
+                                </cite>
+                            </footer>
+
+                        </div>
+                        <div class="col-2 nav-container">
+                            
+                            <nav>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="modal_btn" href="javascript:void(0);">Video</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </section>
+
+        <!-- The Modal -->
+        <div id="modal_video" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="card video_container">
+                    <!-- width="560" height="315" -->
+                    <iframe class="card-img-top" height="315" src="https://www.youtube.com/embed/NVuQWFYlXm8?showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <div class="card-footer">
+                        Ordenamiento de Burbuja (Bubble Sort) en Java<br>
+                        <small class="text-muted">
+                            <a href="https://www.youtube.com/channel/UCLXRGxAzeaLDGaOphqapzmg" target="_blank">codigofacilito</a>
+                        </small><br>
+                        <small class="text-muted">Mar 24, 2012</small><br>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <footer>
             <section class="text-center visitantes">

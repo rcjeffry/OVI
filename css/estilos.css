@@ -3,6 +3,8 @@ body {
     background: #005883;
 }
 
+
+
 /* Header */
 section.container-fluid{
     margin: 10px 0px;
@@ -20,6 +22,8 @@ section.container-fluid{
     display: flex;
     align-items: center;
 }
+
+
 
 /* Nav */
 .nav-container{
@@ -46,6 +50,8 @@ section.container-fluid{
     background-color: #555;
     color: white;
 }
+
+
 
 /* Contenido de la Pagina */
 .container-body {
@@ -74,7 +80,7 @@ section.container-fluid{
 .video_container{
     text-align: center;
     margin: auto;
-    width: 560px;
+    width: 556px;
 }
 
 .twitter_feed {
@@ -84,6 +90,58 @@ section.container-fluid{
 .card-footer{
     text-align: left;
 }
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    /* padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width : 560px;
+    z-index: 4
+}
+
+/* The Close Button */
+.close {
+    color: #000;
+    position: absolute;
+    font-size: 24px;
+    height: 24px;
+    top: -10px;
+    right: -10px;
+    z-index: 5;
+    background: #FFF;
+    border-radius: 54px;
+    width: 24px;
+    text-align: center;
+    opacity: 1;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
 
 /* footer */
 footer{
@@ -117,12 +175,27 @@ footer{
 }
 
 @media all and (max-width: 760px){
-    .nav-container, .container-body{
+    .content-section, .nav-container, .container-body{
         max-width: 100% !important;
         flex: 0 0 100%;   
     }   
 
     .nav-container nav {
         box-shadow: 0px 0px 0px;
+    }
+}
+
+@media all and (max-width: 644px){
+    .modal-content {
+        width : 100%;
+    }
+
+    /* The Close Button */
+    .close {
+        right: 0px;
+    }
+
+    .video_container {
+        width: 100%;
     }
 }

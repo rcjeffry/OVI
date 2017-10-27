@@ -60,21 +60,66 @@
                 <div class="col-10 container-body">
 
                     <h3 class="body-title">M&eacute;todo de ordenaci&oacute;n de Selecci&oacute;n</h3>
-                    <div class="card video_container">
-                        <!-- width="560" height="315" -->
-                        <iframe class="card-img-top" height="315" src="https://www.youtube.com/embed/fLgTh2TQYPk?showinfo=0" frameborder="0" allowfullscreen></iframe>
-                        <div class="card-footer">
-                            Metodo de ordenamiento por seleccion en java<br>
-                            <small class="text-muted">
-                                <a href="https://www.youtube.com/channel/UCVj5C7Ec5FTaBE8i4huZS3w" target="_blank">Ivan Zempoaltecatl</a>
-                            </small><br>
-                            <small class="text-muted">Jan 21, 2014</small><br>
+                    
+                    <div class="row">
+                        <div class="col-10 content-section">
+
+                            <p>Este método de ordenamiento se caracteriza por realizar comparaciones de cada uno de los valores con todos los demás de manera secuencial, con el objetivo de seleccionar el valor menor para ubicarlo en un orden nuevo, es decir se compara el 1 con el 2, el 1 con el 3 y así sucesivamente, si en una comparación se encuentra que el valor comparado con el primer dato es menor este pasa a ser el posible menor valor del arreglo y se gurda en una variables auxiliar, si al encontrar en una nueva comparación un nuevo valor menor que el primero, este nuevo valor es comparado con la variable guardada para decidir si pasa a ser el nuevo valor menor, al final del primer recorrido se ubica en una nueva lista el menor valor, esta lista se va llenando de acuerdo a los recorridos realizados para obtener el ordenamiento deseado.</p><br>
+                    
+                            <p>A continuación, se muestra el algoritmo para su debida implementación.</p>
+                            
+                            <br>
+                            
+                            <div class="code_container">
+                                <pre><code>Entero[] seleccion(entero v[], entero n)<br>&#9;Entero: i, j, posmenor, aux<br>&#9;&#9;Para i = 1 hasta n-1 hacer<br>&#9;&#9;&#9;posmenor = i<br>&#9;&#9;&#9;Para j = i+1 hasta n hacer<br>&#9;&#9;&#9;&#9;Si v[posmenor] > v[j] entonces<br>&#9;&#9;&#9;&#9;&#9;posmenor = j<br>&#9;&#9;&#9;&#9;Fin si<br>&#9;&#9;&#9;Fin para<br>&#9;&#9;&#9;aux = v[i]<br>&#9;&#9;&#9;v[i] = v[posmenor]<br>&#9;&#9;&#9;v[posmenor] = aux<br>&#9;&#9;Fin para<br>&#9;Retornar v[]<br>Fin selección</code></pre>
+                            </div>
+
+                            <footer class="blockquote-footer">
+                                <cite title="Source Title">
+                                    <a href="http://sistemaseinformatica.weebly.com/uploads/1/1/5/0/11503229/modulo.2011.pdf" target="_blank">Bermúdez Rojas, S. (2011) - Introducción A La Programación</a>
+                                </cite>
+                            </footer>
+                            <footer class="blockquote-footer">
+                                <cite title="Source Title">
+                                    <a href="http://hdl.handle.net/10596/11970" target="_blank">Chaves Torres, A. (2017) - Aprenda a diseñar algoritmos</a>
+                                </cite>
+                            </footer>
+
+                        </div>
+                        <div class="col-2 nav-container">
+                            
+                            <nav>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="modal_btn" href="javascript:void(0);">Video</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
+
+        <!-- The Modal -->
+        <div id="modal_video" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="card video_container">
+                    <!-- width="560" height="315" -->
+                    <iframe class="card-img-top" height="315" src="https://www.youtube.com/embed/fLgTh2TQYPk?showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <div class="card-footer">
+                        Metodo de ordenamiento por seleccion en java<br>
+                        <small class="text-muted">
+                            <a href="https://www.youtube.com/channel/UCVj5C7Ec5FTaBE8i4huZS3w" target="_blank">Ivan Zempoaltecatl</a>
+                        </small><br>
+                        <small class="text-muted">Jan 21, 2014</small><br>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <footer>
             <section class="text-center visitantes">
