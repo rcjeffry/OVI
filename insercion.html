@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="UTF-8"/> 
@@ -84,14 +84,21 @@
                                     <a href="http://hdl.handle.net/10596/11970" target="_blank">Chaves Torres, A. (2017) - Aprenda a diseñar algoritmos</a>
                                 </cite>
                             </footer>
-
+                            <footer class="blockquote-footer">
+                                <cite title="Source Title">
+                                    <a href="https://youtu.be/O4iuk9VhqYs" target="_blank">codigofacilito. (2012, marzo 27). Ordenamiento por Inserción (Insertion Sort) en Java <BR>[Archivo de video]. Recuperado de https://youtu.be/O4iuk9VhqYs</a>
+                                </cite>
+                            </footer>    
                         </div>
                         <div class="col-2 nav-container">
                             
                             <nav>
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" id="modal_btn" href="javascript:void(0);">Video</a>
+                                        <a class="nav-link modal_btn" data-target='video' href="javascript:void(0);">Video</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link modal_btn" data-target='anim' href="javascript:void(0);">Repre. Animada</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -117,6 +124,17 @@
                         </small><br>
                         <small class="text-muted">Mar 27, 2012</small><br>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="modal_anim" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content animate_container">
+                <span class="close">&times;</span>
+                <div class="card video_container">
+                    <iframe class="card-img-top" style="height : 98vh;" src="http://lwh.free.fr/pages/algo/tri/tri_insertion_es.html" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>

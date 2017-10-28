@@ -98,7 +98,7 @@ section.container-fluid1{
 .video_container{
     text-align: center;
     margin: auto;
-    width: 556px;
+    width: 100%;
 }
 
 .twitter_feed {
@@ -133,6 +133,10 @@ section.container-fluid1{
     border: 1px solid #888;
     width : 560px;
     z-index: 4
+}
+
+.modal-content.animate_container{
+    width : 750px;
 }
 
 /* The Close Button */

@@ -21,20 +21,26 @@ function MaysPrimera(string){
 $(document).ready(function(){
 	cambiar_titulo_y_active();
 
-	// Get the modal
-    var modal = document.getElementById('modal_video');
+	// When the user clicks the button, open the modal 
+    $('.modal_btn').click(function(){
+        var target = $(this).attr('data-target');
 
-    var btn = document.getElementById("modal_btn"); // Get the button that opens the modal
-    btn.onclick = function() { // When the user clicks the button, open the modal 
-        modal.style.display = "flex";
-        modal.style.alignItems = "center";
-        modal.style.justifyContent = "center";
-    }
-
-    var span = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
-    span.onclick = function() { // When the user clicks on <span> (x), close the modal
-        modal.style.display = "none";
-    }
+        // Get the modal
+        var modal = $('#modal_'+target);
+        modal.css({
+            display : "flex",
+            alignItems : "center",
+            justifyContent : "center",
+        });
+    });
+    
+    // When the user clicks on <span> (x), close the modal
+    $(".close").click(function(){
+        $('.modal').css({
+            display : "none"
+        });
+        
+    });
 
     // When the user clicks anywhere outside of the modal, close it
     //window.onclick = function(event) {
