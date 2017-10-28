@@ -95,20 +95,11 @@
                             <nav>
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" id="modal_btn" href="javascript:void(0);">Video</a>
+                                        <a class="nav-link modal_btn" data-target='video' href="javascript:void(0);">Video</a>
                                     </li>
-                                </ul>
-                            </nav>
-
-                        </div>
-                         <div class="col-2 nav-container2">
-                            
-                            <nav>
-                                <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" id="modal_btn" href="javascript:void(0);">Repre. Animada</a>
-
-                                </li>
+                                        <a class="nav-link modal_btn" data-target='anim' href="javascript:void(0);">Repre. Animada</a>
+                                    </li>
                                 </ul>
                             </nav>
 
@@ -127,17 +118,23 @@
                     <!-- width="560" height="315" -->
                     <iframe class="card-img-top" height="315" src="https://www.youtube.com/embed/O4iuk9VhqYs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                     <div class="card-footer">
-
-                <div class="card video_container2">
-                    <!-- width="560" height="315" -->
-                    <iframe class="card-img-top" height="315" src="http://lwh.free.fr/pages/algo/tri/tri_insertion_es.html" frameborder="0" allowfullscreen></iframe>
-                    <div class="card-footer">
                         Ordenamiento por Inserción (Insertion Sort) en Java<br>
                         <small class="text-muted">
                             <a href="https://www.youtube.com/channel/UCLXRGxAzeaLDGaOphqapzmg" target="_blank">codigofacilito</a>
                         </small><br>
                         <small class="text-muted">Mar 27, 2012</small><br>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="modal_anim" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content animate_container">
+                <span class="close">&times;</span>
+                <div class="card video_container">
+                    <iframe class="card-img-top" style="height : 98vh;" src="http://lwh.free.fr/pages/algo/tri/tri_insertion_es.html" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
