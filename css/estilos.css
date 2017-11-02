@@ -188,7 +188,7 @@ footer{
     display: none;
 }
 
-#facebook{
+#icono{
     width: 10%;
 }
 
@@ -213,6 +213,7 @@ footer{
     .footer-logo{
         max-width: 100% !important;
         flex: 0 0 100%;
+        align-content: 
     }
 
     .footer-middle{
@@ -220,6 +221,7 @@ footer{
         flex: 0 0 50%;
         text-align: center;
         margin-bottom: 20px;
+
     }
 
     #logoUnad{
@@ -267,6 +269,7 @@ footer{
         max-width: 100% !important;
         flex: 0 0 100%;
         text-align: center;
+        
     }
 }
 
