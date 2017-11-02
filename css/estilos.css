@@ -11,17 +11,6 @@ section.container-fluid1{
 
 }
 */
-#facebook{
-
-    width: 10%;
-}
-.container-fluid-footer{
-background-color: #F47920;
-margin-top: 30px;
-margin-bottom: 30px;
-
-
-}
 
 
 header{
@@ -185,17 +174,23 @@ header{
 
 /* footer */
 footer{
-    margin-top: 10px;
-    margin-bottom: 20px;
+    padding: 20px 0px;
+    background-color: #FFFFFF;
 }
 
 .visitantes{
-    color: #fff;
+    color: #000;
     font-weight: bold;
     font-size: 25px;
 }
 
+#divider-footer{
+    display: none;
+}
 
+#facebook{
+    width: 10%;
+}
 
 
 @media all and (max-width: 1000px){
@@ -211,6 +206,28 @@ footer{
 
     .logo-container{
         display: none;
+    }
+}
+
+@media all and (max-width: 990px){
+    .footer-logo{
+        max-width: 100% !important;
+        flex: 0 0 100%;
+    }
+
+    .footer-middle{
+        max-width: 50% !important;
+        flex: 0 0 50%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #logoUnad{
+        margin: 0 auto 20px auto;
+    }
+
+    #divider-footer{
+        display: block;
     }
 }
 
@@ -244,7 +261,13 @@ footer{
     #logoUnad{
         width: 250px;
         margin: 0px auto 20px auto;
-    }   
+    }
+
+    .footer-middle{
+        max-width: 100% !important;
+        flex: 0 0 100%;
+        text-align: center;
+    }
 }
 
 @media all and (max-width: 300px){
