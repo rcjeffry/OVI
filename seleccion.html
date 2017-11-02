@@ -10,12 +10,13 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/estilos.css">
     </head>
-    <body>
-        <!-- En esta parte se encuentra la cabecera -->
+    <body>        
         <header>
+            <!-- En esta parte se encuentra la cabecera 
             <section class="container-fluid">
                 <div class="row">
                     <div class="col-2 logo-container">
@@ -25,9 +26,15 @@
                         <h4 class="title">OVI M&eacute;todos de ordenaci&oacute;n utilizando programaci&oacute;n orientada a objetos</h4> 
                     </div>
                 </div>
-            </section>
-        </header>
+            </section>-->
 
+            <div id="logoUnad">
+                <img src="img/logoUNAD1.png">
+            </div>
+            <div class="title-container">
+                <h4 class="title">OVI M&eacute;todos de ordenaci&oacute;n utilizando programaci&oacute;n orientada a objetos</h4> 
+            </div>
+        </header>
 
         <section class="container-fluid">
             <div class="row">
@@ -64,8 +71,21 @@
                     <div class="row">
                         <div class="col-10 content-section">
 
-                            <p>Este método de ordenamiento se caracteriza por realizar comparaciones de cada uno de los valores con todos los demás de manera secuencial, con el objetivo de seleccionar el valor menor para ubicarlo en un orden nuevo, es decir se compara el 1 con el 2, el 1 con el 3 y así sucesivamente, si en una comparación se encuentra que el valor comparado con el primer dato es menor este pasa a ser el posible menor valor del arreglo y se gurda en una variables auxiliar, si al encontrar en una nueva comparación un nuevo valor menor que el primero, este nuevo valor es comparado con la variable guardada para decidir si pasa a ser el nuevo valor menor, al final del primer recorrido se ubica en una nueva lista el menor valor, esta lista se va llenando de acuerdo a los recorridos realizados para obtener el ordenamiento deseado.</p><br>
+                            <p>Este método de ordenamiento se caracteriza por realizar comparaciones de cada uno de los valores con todos los demás de manera secuencial, con el objetivo de seleccionar el valor menor para ubicarlo en un orden nuevo, es decir se compara el 1 con el 2, el 1 con el 3 y así sucesivamente, si en una comparación se encuentra que el valor comparado con el primer dato es menor este pasa a ser el posible menor valor del arreglo y se guarda en una variables auxiliar, si al encontrar en una nueva comparación un nuevo valor menor que el primero, este nuevo valor es comparado con la variable guardada para decidir si pasa a ser el nuevo valor menor, al final del primer recorrido se ubica en una nueva lista el menor valor, esta lista se va llenando de acuerdo a los recorridos realizados para obtener el ordenamiento deseado.</p><br>
                     
+                            <div class="col-3 logo-container">
+                                 <img src="img/seleccion.gif">
+                            </div>
+
+                            <br>
+                            <br>
+
+                            <p>Este tipo de ordenamiento maneja unicamente un espacio de memoria adicional donde se almacena el valor a comparar, por lo cual su requerimiento en memoria es constante y no requiere de memoria extra, tambien se considera de facil utilizacion y funcionalidad constante ya que son inperceptibles las diferencias entre una comparacion y la subsiguiente, algunos aspectos que ponen en desventaja de este metodo con respecto a otros es que se torna lento ademas de realizar muchas comparaciones, se recomienda el uso para manejo de bases con registros grandes y claves cortas.</p>
+
+                            <br>
+                            <br>
+
+
                             <p>A continuación, se muestra el algoritmo para su debida implementación.</p>
                             
                             <br>
@@ -84,14 +104,21 @@
                                     <a href="http://hdl.handle.net/10596/11970" target="_blank">Chaves Torres, A. (2017) - Aprenda a diseñar algoritmos</a>
                                 </cite>
                             </footer>
-
+                            <footer class="blockquote-footer">
+                                <cite title="Source Title">
+                                    <a href="https://youtu.be/fLgTh2TQYPk" target="_blank">Zempoaltecatl, I. (2014, enero 21). Metodo de ordenamiento por <BR>seleccion en java [Archivo de video]. Recuperado de https://youtu.be/fLgTh2TQYPk</a>
+                                </cite>
+                            </footer>
                         </div>
                         <div class="col-2 nav-container">
                             
                             <nav>
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" id="modal_btn" href="javascript:void(0);">Video</a>
+                                        <a class="nav-link modal_btn" data-target='video' href="javascript:void(0);">Video</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://es.khanacademy.org/computing/computer-science/algorithms/sorting-algorithms/p/challenge-implement-swap" target="_blank">Actividad</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -121,22 +148,63 @@
             </div>
         </div>
 
+        <!-- The Modal -->
+        <div id="modal_anim" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content animate_container">
+                <span class="close">&times;</span>
+                <div class="card video_container">
+                    <iframe class="card-img-top" style="height : 98vh;" src="https://es.khanacademy.org/computing/computer-science/algorithms/sorting-algorithms/p/challenge-implement-swap" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
         <footer>
-            <section class="text-center visitantes">
-                <!-- Contador -->
-                Visitantes:  
-                <!-- Sin estadisticas -->
-                <a href="https://www.contadorvisitasgratis.com" title="contador de visitas gratis para blog"><img src="https://counter8.freecounter.ovh/private/contadorvisitasgratis.php?c=b4wc89w1bkcb58bqaznb3tyn9kfx7228" border="0" title="contador de visitas gratis para blog" alt="contador de visitas gratis para blog"></a>
 
-                <!-- Con estadisticas -->
-                <!-- <div id="sfcb4wc89w1bkcb58bqaznb3tyn9kfx7228"></div><script type="text/javascript" src="https://counter8.freecounter.ovh/private/counter.js?c=b4wc89w1bkcb58bqaznb3tyn9kfx7228&down=async" async></script> -->
-            </section>
+            <div class="container-fluid">
+                <section class="row">
+                    <div class="col-12 footer-middle">
+                        <h1 class="">Contactos</h1>
+                    </div>
+                    <div class="col-4 footer-middle">
+                        <img id="icono" src="img/facebook.png" >
+                        <img id="icono" src="img/twitter.png" >
+                        <img id="icono" src="img/contacto.png" >
+                        <p>diseñoWeb363@unad.edu.co</p>
+                        <p>@diseñoWeb363</p>
+                        <p>Diseño Web 363</p>
+                    </div>
+                    <div class="col-4 footer-middle">
+                        <h3>Diseño de Sitios Web </h3>
+                        <h5>Grupo 301122A_363</h5>
+                    </div>
+                    <div class="col-4 footer-logo">
+                        <div id="logoUnad">
+                            <img src="img/logoUNAD1.png">
+                        </div>
+                    </div>
+                    <hr id="divider-footer">
+                    
+                    
+                </section>
 
-            <!-- JS -->
-            <script src="js/jquery-3.2.1.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script type="text/javascript" src="js/prefixfree.min.js"></script>
-            <script src="js/scripts.js"></script>
+                <section class="text-center visitantes">
+                    <!-- Contador -->
+                    Visitantes:  
+                    <!-- Sin estadisticas -->
+                    <a href="https://www.contadorvisitasgratis.com" title="contador de visitas gratis para blog"><img src="https://counter8.freecounter.ovh/private/contadorvisitasgratis.php?c=b4wc89w1bkcb58bqaznb3tyn9kfx7228" border="0" title="contador de visitas gratis para blog" alt="contador de visitas gratis para blog"></a>
+
+                    <!-- Con estadisticas -->
+                    <!-- <div id="sfcb4wc89w1bkcb58bqaznb3tyn9kfx7228"></div><script type="text/javascript" src="https://counter8.freecounter.ovh/private/counter.js?c=b4wc89w1bkcb58bqaznb3tyn9kfx7228&down=async" async></script> -->
+                </section>
+
+                <!-- JS -->
+                <script src="js/jquery-3.2.1.min.js"></script>
+                <script type="text/javascript" src="js/prefixfree.min.js"></script>
+                <script src="js/scripts.js"></script>
+            </div>
+
+            
         </footer>
     </body>
 </html>

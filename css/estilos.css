@@ -3,24 +3,49 @@ body {
     background: #005883;
 }
 
+/* Header 
+section.container-fluid1{
+    background: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+*/
 
 
-/* Header */
-section.container-fluid{
-    margin: 10px 0px;
+header{
+    background-color: #fff;
+    padding: 20px;
+}
+
+#logoUnad{
+    background: #FFFFFF;
+    width: 315px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+#logoUnad img{
+    width: 100%;
 }
 
 .title{
-    color: #FFFFFF;
-    font-size: 40px;
+    color: #000000;
+    font-size: 50px;
     font-weight: bold;
-    font-family: 'Libre Franklin', sans-serif;
-    margin: 0px 30px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    /*margin: 20px;*/
+    align-items: center;
+    margin: auto;
 }
 
 .title-container{
+    /*margin-top: 30px;
+    margin-bottom: 20px;*/
     display: flex;
-    align-items: center;
+    padding: 0px !important;
+    text-align: center;
+    /*background: #005883;*/
 }
 
 
@@ -80,7 +105,7 @@ section.container-fluid{
 .video_container{
     text-align: center;
     margin: auto;
-    width: 556px;
+    width: 100%;
 }
 
 .twitter_feed {
@@ -117,6 +142,10 @@ section.container-fluid{
     z-index: 4
 }
 
+.modal-content.animate_container{
+    width : 750px;
+}
+
 /* The Close Button */
 .close {
     color: #000;
@@ -145,17 +174,23 @@ section.container-fluid{
 
 /* footer */
 footer{
-    margin-top: 10px;
-    margin-bottom: 20px;
+    padding: 20px 0px;
+    background-color: #FFFFFF;
 }
 
 .visitantes{
-    color: #fff;
+    color: #000;
     font-weight: bold;
     font-size: 25px;
 }
 
+#divider-footer{
+    display: none;
+}
 
+#icono{
+    width: 10%;
+}
 
 
 @media all and (max-width: 1000px){
@@ -171,6 +206,30 @@ footer{
 
     .logo-container{
         display: none;
+    }
+}
+
+@media all and (max-width: 990px){
+    .footer-logo{
+        max-width: 100% !important;
+        flex: 0 0 100%;
+        align-content: 
+    }
+
+    .footer-middle{
+        max-width: 50% !important;
+        flex: 0 0 50%;
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+
+    #logoUnad{
+        margin: 0 auto 20px auto;
+    }
+
+    #divider-footer{
+        display: block;
     }
 }
 
@@ -198,4 +257,24 @@ footer{
     .video_container {
         width: 100%;
     }
+}
+
+@media all and (max-width: 500px){
+    #logoUnad{
+        width: 250px;
+        margin: 0px auto 20px auto;
+    }
+
+    .footer-middle{
+        max-width: 100% !important;
+        flex: 0 0 100%;
+        text-align: center;
+        
+    }
+}
+
+@media all and (max-width: 300px){
+    #logoUnad{
+        width: 100%;
+    }   
 }

@@ -10,12 +10,13 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/estilos.css">
     </head>
-    <body>
-        <!-- En esta parte se encuentra la cabecera -->
+    <body>        
         <header>
+            <!-- En esta parte se encuentra la cabecera 
             <section class="container-fluid">
                 <div class="row">
                     <div class="col-2 logo-container">
@@ -25,9 +26,15 @@
                         <h4 class="title">OVI M&eacute;todos de ordenaci&oacute;n utilizando programaci&oacute;n orientada a objetos</h4> 
                     </div>
                 </div>
-            </section>
-        </header>
+            </section>-->
 
+            <div id="logoUnad">
+                <img src="img/logoUNAD1.png">
+            </div>
+            <div class="title-container">
+                <h4 class="title">OVI M&eacute;todos de ordenaci&oacute;n utilizando programaci&oacute;n orientada a objetos</h4> 
+            </div>
+        </header>
 
         <section class="container-fluid">
             <div class="row">
@@ -66,15 +73,11 @@
 
                             <p>La utilización del método de inserción consiste en insertar los datos de manera organizada de acuerdo a la posición que le corresponda por medio de la comparación de cada uno de los valores con todos los demás de forma organizada, al mismo tiempo se van desplazando de posición los valores comparados, es decir el primer dato es comparado con el segundo, si no se presenta el orden esperado se intercambian de posición, este mismo dato inicial se sigue comparando sucesivamente con todos hasta que se encuentre con aquel valor que cumple con el criterio, de esta manera es insertado el valor evaluado en la posición adecuada, se repite el proceso con el segundo dato hasta valorar todos las posiciones.</p><br>
                     
-                            <p>Asi el el proceso en el caso de una lista de enteros A = 50,20,40,80,30 visualizado en la imagene:</p>
+                            <p>Asi el proceso en el caso de una lista de enteros A = 50,20,40,80,30 visualizado en la imagen:</p>
                             
-                            <br></br>
-                             
-                            <div class="col-3 logo-container">
-                                 <img src="img/insercion.jpeg"borde="4">
+                            <div class="logo-container">
+                                <img src="img/insercion.jpg">
                             </div>
-
-                            <br>
 
                             <br>
 
@@ -96,27 +99,22 @@
                                     <a href="http://hdl.handle.net/10596/11970" target="_blank">Chaves Torres, A. (2017) - Aprenda a diseñar algoritmos</a>
                                 </cite>
                             </footer>
-
+                            <footer class="blockquote-footer">
+                                <cite title="Source Title">
+                                    <a href="https://youtu.be/O4iuk9VhqYs" target="_blank">codigofacilito. (2012, marzo 27). Ordenamiento por Inserción (Insertion Sort) en Java <BR>[Archivo de video]. Recuperado de https://youtu.be/O4iuk9VhqYs</a>
+                                </cite>
+                            </footer>    
                         </div>
                         <div class="col-2 nav-container">
                             
                             <nav>
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" id="modal_btn" href="javascript:void(0);">Video</a>
+                                        <a class="nav-link modal_btn" data-target='video' href="javascript:void(0);">Video</a>
                                     </li>
-                                </ul>
-                            </nav>
-
-                        </div>
-                         <div class="col-2 nav-container2">
-                            
-                            <nav>
-                                <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" id="modal_btn" href="javascript:void(0);">Repre. Animada</a>
-
-                                </li>
+                                        <a class="nav-link" href="https://es.khanacademy.org/computing/computer-science/algorithms/insertion-sort/p/challenge-implement-insert" target="_blank">Actividad</a>
+                                    </li>
                                 </ul>
                             </nav>
 
@@ -135,11 +133,6 @@
                     <!-- width="560" height="315" -->
                     <iframe class="card-img-top" height="315" src="https://www.youtube.com/embed/O4iuk9VhqYs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                     <div class="card-footer">
-
-                <div class="card video_container2">
-                    <!-- width="560" height="315" -->
-                    <iframe class="card-img-top" height="315" src="http://lwh.free.fr/pages/algo/tri/tri_insertion_es.html" frameborder="0" allowfullscreen></iframe>
-                    <div class="card-footer">
                         Ordenamiento por Inserción (Insertion Sort) en Java<br>
                         <small class="text-muted">
                             <a href="https://www.youtube.com/channel/UCLXRGxAzeaLDGaOphqapzmg" target="_blank">codigofacilito</a>
@@ -150,22 +143,63 @@
             </div>
         </div>
 
+        <!-- The Modal -->
+        <div id="modal_anim" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content animate_container">
+                <span class="close">&times;</span>
+                <div class="card video_container">
+                    <iframe class="card-img-top" style="height : 98vh;" src="https://es.khanacademy.org/computing/computer-science/algorithms/insertion-sort/p/challenge-implement-insert" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
         <footer>
-            <section class="text-center visitantes">
-                <!-- Contador -->
-                Visitantes:  
-                <!-- Sin estadisticas -->
-                <a href="https://www.contadorvisitasgratis.com" title="contador de visitas gratis para blog"><img src="https://counter8.freecounter.ovh/private/contadorvisitasgratis.php?c=b4wc89w1bkcb58bqaznb3tyn9kfx7228" border="0" title="contador de visitas gratis para blog" alt="contador de visitas gratis para blog"></a>
 
-                <!-- Con estadisticas -->
-                <!-- <div id="sfcb4wc89w1bkcb58bqaznb3tyn9kfx7228"></div><script type="text/javascript" src="https://counter8.freecounter.ovh/private/counter.js?c=b4wc89w1bkcb58bqaznb3tyn9kfx7228&down=async" async></script> -->
-            </section>
+            <div class="container-fluid">
+                <section class="row">
+                    <div class="col-12 footer-middle">
+                        <h1 class="">Contactos</h1>
+                    </div>
+                    <div class="col-4 footer-middle">
+                        <img id="icono" src="img/facebook.png" >
+                        <img id="icono" src="img/twitter.png" >
+                        <img id="icono" src="img/contacto.png" >
+                        <p>diseñoWeb363@unad.edu.co</p>
+                        <p>@diseñoWeb363</p>
+                        <p>Diseño Web 363</p>
+                    </div>
+                    <div class="col-4 footer-middle">
+                        <h3>Diseño de Sitios Web </h3>
+                        <h5>Grupo 301122A_363</h5>
+                    </div>
+                    <div class="col-4 footer-logo">
+                        <div id="logoUnad">
+                            <img src="img/logoUNAD1.png">
+                        </div>
+                    </div>
+                    <hr id="divider-footer">
+                    
+                    
+                </section>
 
-            <!-- JS -->
-            <script src="js/jquery-3.2.1.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script type="text/javascript" src="js/prefixfree.min.js"></script>
-            <script src="js/scripts.js"></script>
+                <section class="text-center visitantes">
+                    <!-- Contador -->
+                    Visitantes:  
+                    <!-- Sin estadisticas -->
+                    <a href="https://www.contadorvisitasgratis.com" title="contador de visitas gratis para blog"><img src="https://counter8.freecounter.ovh/private/contadorvisitasgratis.php?c=b4wc89w1bkcb58bqaznb3tyn9kfx7228" border="0" title="contador de visitas gratis para blog" alt="contador de visitas gratis para blog"></a>
+
+                    <!-- Con estadisticas -->
+                    <!-- <div id="sfcb4wc89w1bkcb58bqaznb3tyn9kfx7228"></div><script type="text/javascript" src="https://counter8.freecounter.ovh/private/counter.js?c=b4wc89w1bkcb58bqaznb3tyn9kfx7228&down=async" async></script> -->
+                </section>
+
+                <!-- JS -->
+                <script src="js/jquery-3.2.1.min.js"></script>
+                <script type="text/javascript" src="js/prefixfree.min.js"></script>
+                <script src="js/scripts.js"></script>
+            </div>
+
+            
         </footer>
     </body>
 </html>
